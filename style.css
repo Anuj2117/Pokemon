@@ -1,0 +1,217 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Satisfy", cursive;
+}
+/* body {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(592678.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+} */
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(592678.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+h1{
+  color: rgb(244, 222, 226);
+}
+.cursor {
+  display: inline-block;
+  vertical-align: middle;
+  animation: blink-caret 1s infinite;
+}
+
+@keyframes blink-caret {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.uppersection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.uppersection h1 {
+  font-size: 40px;
+  margin: 15px;
+}
+#poketype {
+  width: 120px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+  text-align: center;
+}
+input {
+  width: 150px;
+  height: 29px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+}
+input::placeholder {
+  font-size: 16px;
+  font-weight: 700;
+}
+.searchbutton, .resetbutton {
+  width: 100px;
+  height: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.resetbutton{
+    background-color: blanchedalmond;
+}
+.filter {
+  width: 100px;
+  height: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.pokemondiv {
+  width: 80%;
+  min-height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.noPokemon {
+  color: #fff;
+  font-size: 2rem;
+  grid-column: 1/5;
+  margin: 2rem 0;
+  text-align: center;
+}
+.pokemoninfo {
+  width: 250px;
+  height: 370px;
+  background-color: red;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+img {
+  width: 100px;
+  height: 100px;
+  margin: 15px;
+}
+.knowmore {
+  margin: 25px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.showless{
+  margin: 10px;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  
+}
+.extrainfo {
+  width: 250px;
+  height: 370px;
+  background:linear-gradient(  #87CEEB, #c6ed9f, #f4b099);
+  margin: 20px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  display: none;
+}
+.extrainfo h2 {
+  font-size: 20px;
+  margin: 5px;
+}
+.normal {
+  background:linear-gradient(#FFC0CB, #ADD8E6, #FFFFFF);
+}
+.fire {
+  background:linear-gradient(#FFC0CB, #ADD8E6, #FFFFFF);
+}
+.water {
+  background:linear-gradient(#ADD8E6, #90EE90, #FFC0CB);
+}
+.poison {
+  background:linear-gradient(#FFC0CB, #90EE90, #ADD8E6);
+}
+.fighting {
+  background:linear-gradient( #90EE90, #FFFFFF, #ADD8E6);
+}
+.ice {
+  background:linear-gradient( #ADD8E6, #FFC0CB, #FFFFFF);
+}
+.ground {
+  background:linear-gradient( #90EE90, #FFC0CB, #ADD8E6);
+}
+.grass {
+  background:linear-gradient(#ADD8E6, #FFFFFF, #FFC0CB);
+}
+.electric {
+  background:linear-gradient( #FFFFFF, #90EE90, #ADD8E6);
+}
+.flying {
+  background:linear-gradient( #FFC0CB, #ADD8E6, #90EE90);
+}
+.psychic {
+  background:linear-gradient(#FFFFFF, #FFC0CB, #90EE90);
+}
+.bug {
+  background:linear-gradient(#FFC0CB, #ADD8E6, #90EE90);
+}
+.rock {
+  background:linear-gradient(#ADD8E6, #FFC0CB, #FFFFFF);
+}
+.ghost {
+  background:linear-gradient(#FFFFFF, #90EE90, #FFC0CB);
+}
+.dragon {
+  background:linear-gradient(#90EE90, #ADD8E6, #FFFFFF);
+}
+.dark {
+  background:linear-gradient( #FFC0CB, #FFFFFF, #ADD8E6);
+}
+.steel {
+  background:linear-gradient(#FFFFFF, #ADD8E6, #90EE90);
+}
+.fairy {
+  background:linear-gradient(#90EE90, #FFC0CB, #FFFFFF);
+}
